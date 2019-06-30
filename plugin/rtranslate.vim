@@ -1,4 +1,4 @@
-command! -nargs=+ -count=0 Rtranslate call s:Rtranslate(<count>, <f-args>)
+command! -nargs=+ -range=0 Rtranslate call s:Rtranslate(<count>, <f-args>)
 function! s:Rtranslate(count, position, key, ...)
   if a:count > 0
     let value = sj#GetMotion('gv')
